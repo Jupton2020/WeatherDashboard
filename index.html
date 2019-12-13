@@ -19,23 +19,33 @@
 
 <body>
     <!-- As a heading -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light"
+        style="background-image: url(https://media2.giphy.com/media/hShVR0dwu2URW/giphy.gif?cid=790b7611700364669df566e6c1e092fe30d44fdcf4435363&rid=giphy.gif); background-repeat:no-repeat; background-size:cover;">
         <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
     </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Main Content -->
+    <div class="row" id="cityRow">
+        <div class="col-sm-3" style="margin-bottom: 10px;">
+            <h3 class="text-primary">Search for a City:</h3>
+            <strong><span id="error" class="text-center" style="margin-top:10px;"></span></strong>
+            <form class="form-control" name="city" type="text" id="city" placeholder="Enter City Name"
+                aria-label="Search">
+                <button type="button" id="submitCity" class="btn btn-primary" type="submit">Search City</button>
+            </form>
+            <br>
+            <div class="city-input"></div>
+        </div>
+        <div class="col currentWeather">
+            <div class="card">
+                <div id="error2"></div>
+                <div id="showWeather" class="card-body"></div>
+            </div>
+            <br>
+            <div class="row" id="fiveDayForecast">
+                <h2>5-Day Forecast:</h2>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
