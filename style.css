@@ -1,20 +1,111 @@
-#error2{
-    color: red;
+*, *::after, *::before{
+    box-sizing: border-box;
 }
-.navbar{
+
+body{
+    height: 100%;
+    margin:0px;
+    position: relative;
+    background-size: cover;
+    padding: 0px;
+}
+
+.header{
+    margin-top: 1px;
     margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    top: 0px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
 }
-.col-sm-3{
-    margin-left: 15px;
-    padding-right: 10px;
+
+.text-center{
+    margin-top: 8px;
 }
-.h1{
-    color: azure;
-    margin: 0 auto;
+
+.col-lg-4.card{
+    border: 2px solid rgb(104, 206, 247);
 }
-.card{
-    background-color: #4aa1f3;
-    color: azure;
+
+.btn{
+    background-color: rgb(2, 2, 29);
+}
+
+.btn:hover{
+    background-color: rgb(104, 206, 247);
+    cursor: pointer;
+    color:whitesmoke;
+}
+
+#begin{
+    background-color: rgba(255, 255, 255, .8);
+    margin-bottom: 14px;
+}
+
+.start p{
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+}
+
+.sds{
+    margin-bottom: 14px;
+}
+
+.container{
+    background-color: #fff;
+    display: block;
+    height: 50%;
+    margin:0 auto;
+    max-width: 85vw;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.style{
+    width:200px;
+}
+
+.five{
+    background-color: rgb(104, 206, 247);
+}
+
+.five-day{
+    margin-left: 14px;
+    color:rgb(2, 2, 29);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-container{
+    color:rgb(2, 2, 29);
+    background-color: white;
+    border-radius: 14px;
+    padding: 14px;
+    width: auto;
+    height:250px;
+}
+
+.historylist{
+    background-color: rgb(104, 206, 247);
+    border:solid rgb(2, 2, 29) 1px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 10px;
 }
-#show
+
+.historylist:hover{
+    cursor: pointer;
+    background-color: rgb(2, 2, 29);
+    color: whitesmoke;
+}
+
+.row{
+    text-align: center;
+}
+
+div.row.start{
+    text-align: center;
+}
