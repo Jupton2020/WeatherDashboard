@@ -4,48 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"  >
     <title>Weather Dashboard</title>
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="../WeatherDashboard/style.css">
 
 <body>
-    <!-- As a heading -->
-    <nav class="navbar navbar-light"
+    <!-- weather header -->
+    <nav class="header"
         style="background-image: url(https://media2.giphy.com/media/hShVR0dwu2URW/giphy.gif?cid=790b7611700364669df566e6c1e092fe30d44fdcf4435363&rid=giphy.gif); background-repeat:no-repeat; background-size:cover;">
-        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+        <h1 class="text-center">Weather Dashboard</h1>
     </nav>
+
     <!-- Main Content -->
-    <div class="row" id="cityRow">
-        <div class="col-sm-3" style="margin-bottom: 10px;">
-            <h3 class="text-primary">Search for a City:</h3>
-            <strong><span id="error" class="text-center" style="margin-top:10px;"></span></strong>
-            <form class="form-group form-inline" id="cityDiv">
-            <input class="form-control mr-sm-2" name="city" type="text" id="city" placeholder="Enter City Name"
-                aria-label="Search">
-                <button type="button" id="submitCity" class="btn btn-primary" type="submit">Search City</button>
-            </form>
-            <br>
-            <div class="city-input"></div>
+    <div class="container col-sm-1" id="begin">
+        <div class="row start"> </div>
+    </div>
+    <div class="container col-sm-1">
+        <div class="row">
+    <div class="col-lg-5 card">
+        <div class="card-header" style="background-color: rgb(2, 2, 29);">
+            <strong style="color: whitesmoke;">Search your City</strong>
         </div>
-        <div class="col currentWeather">
-            <div class="card">
-                <div id="error2"></div>
-                <div id="showWeather" class="card-body"></div>
-            </div>
-            <br>
-            <div class="row" id="fiveDayForecast">
-                <h2>5-Day Forecast:</h2>
+        <!-- Search area to find city -->
+        <div class="card-body">
+            <input type="text" class="form-control sds" id="get-weather">
+            <button type="submit" class="btn btn-default sds" id="run-search" style="color: whitesmoke;">Search</button>
+            <div class="search-data"></div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="row">
+            <div class="col-lg-12" style="border-radius: 14px; border:solid rgb(2, 2, 29);">
+                <!-- weather data from search -->
+                <div class="weather-container">
+                    <div class="city"></div>
+                    <div class="wind"></div>
+                    <div class="humidity"></div>
+                    <div class="temp"></div>
+                    <div class="uvIndex"></div>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
+    <div class="row">
+        <div class="col five-day"></div>
+    </div>
+    <div class="container">
+        <!-- 5 day forecast generated here -->
+        <div class="five row"></div>
+    </div>
+    </div>
+    </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../WeatherDashboard/script.js"></script>
 </body>
 
