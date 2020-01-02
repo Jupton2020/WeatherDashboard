@@ -36,4 +36,5 @@
   * Humidity
   
   ## Deployed link
-  *
+  * https://jupton2020.github.io/WeatherDashboard/
+  ![](https://github.com/Jupton2020/WeatherDashboard/blob/master/Screen%20Shot%202020-01-01%20at%208.29.28%20PM.png "screenshot")
